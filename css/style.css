@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500&display=swap');
 
 :root {
-    --bg-deep: #0a0a0f;
-    --bg-dark: #13131a;
-    --bg-card: #1a1a24;
-    --gold: #c9a227;
-    --gold-glow: #d4af3799;
-    --text-bright: #e8e4d9;
-    --text-soft: #9a9590;
-    --text-ghost: #6a6560;
-    --traitor-green: #4a6b4a;
-    --border-color: #2a2a35;
-    --firefly: #a0c886;
+    --bg-deep: #0f1410;
+    --bg-dark: #161d18;
+    --bg-card: #1c241e;
+    --gold: #b8942e;
+    --gold-glow: #c9a22766;
+    --text-bright: #e4dfd1;
+    --text-soft: #9a9b8f;
+    --text-ghost: #6b6c5f;
+    --traitor-green: #5d8a4a;
+    --border-color: #2a332b;
+    --firefly: #8db86a;
+    --vine: #3d5c31;
 }
 
 * {
@@ -72,7 +73,7 @@ body::before {
 .nav-bar {
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: rgba(10, 10, 15, 0.9);
+    background: rgba(15, 20, 16, 0.92);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);
     z-index: 100;
@@ -139,8 +140,9 @@ body::before {
     justify-content: center;
     text-align: center;
     position: relative;
-    background: radial-gradient(ellipse at 50% 50%, #1a1a24 0%, var(--bg-deep) 70%);
+    background: radial-gradient(ellipse at 50% 50%, #1c241e 0%, var(--bg-deep) 70%);
     padding: 6rem 2rem 4rem;
+    overflow: hidden;
 }
 .hero-content {
     z-index: 2;
@@ -205,6 +207,42 @@ body::before {
 @keyframes bounce {
     0%, 100% { transform: translateX(-50%) translateY(0); }
     50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* ---------- LOGO EAR ---------- */
+.logo-ear {
+    display: inline-block;
+    position: relative;
+    top: 0.1em;
+    font-size: 0.7em;
+    line-height: 1;
+}
+
+/* ---------- HERO VINES ---------- */
+.hero-vine {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+.left-vine {
+    left: 0;
+}
+.right-vine {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+/* ---------- LOGO EAR ---------- */
+.logo-ear {
+    display: inline-block;
+    position: relative;
+    margin-right: 0.05em;
+    top: 0.45em;
+    font-size: 0.65em;
+    line-height: 1;
 }
 
 /* ---------- SHARED ---------- */

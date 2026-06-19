@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place an Order — HaShelves</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="floating-elements">
+        <div class="particle" style="top: 15%; left: 20%; animation-delay: 0s;"></div>
+        <div class="particle" style="top: 30%; left: 70%; animation-delay: 2s;"></div>
+        <div class="particle" style="top: 55%; left: 15%; animation-delay: 4s;"></div>
+        <div class="particle" style="top: 70%; left: 80%; animation-delay: 6s;"></div>
+        <div class="particle" style="top: 40%; left: 50%; animation-delay: 3s;"></div>
+    </div>
+
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">🐉</span>
+                <span class="logo-text">HaShelves</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="menu.html#books">Books</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="form-section">
+        <div class="container">
+            <h2 class="section-title">Place Your Order</h2>
+            <p class="section-subtitle">For pickup, delivery, or a reserved seat in the Reading Hall</p>
+
+            <div class="form-grid">
+                <div class="form-box">
+                    <h3>Your Order</h3>
+                    <form onsubmit="event.preventDefault(); alert('Order received! The elves will prepare your rations.');">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact">Phone or Email</label>
+                            <input type="text" id="contact" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Order Type</label>
+                            <select id="type">
+                                <option value="pickup">Pickup</option>
+                                <option value="courtyard">Courtyard Table</option>
+                                <option value="reading-hall">Reading Hall Seat</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time</label>
+                            <input type="time" id="time">
+                        </div>
+                        <div class="form-group">
+                            <label for="order-details">Order Details</label>
+                            <textarea id="order-details" placeholder="Items, quantities, special requests..."></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">Send Order</button>
+                    </form>
+                </div>
+
+                <div class="form-info">
+                    <h3>Order Guidelines</h3>
+                    <p>• Same-day orders close at 3pm</p>
+                    <p>• Large gatherings: 48-hour advance notice required</p>
+                    <p>• Courtyard seating is first-come, first-served</p>
+                    <p>• Reading Hall reservations include a minimum order</p>
+
+                    <div class="divider" style="margin: 2rem 0;">— ✦ —</div>
+
+                    <p style="font-size: 0.9rem; color: var(--text-ghost);">
+                        For private events, catering, or bulk book purchases, please use the <a href="contact.html" style="color: var(--sage);">contact page</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <span class="sigil">🌿 🐉 📖</span>
+        <p>© 2026 HaShelves. Brewed with starlight and sourdough.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

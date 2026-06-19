@@ -6,212 +6,165 @@
     <title>HaShelves - Whispered Pages & Savory Feasts</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="floating-elements">
-        <div class="firefly" style="top: 10%; left: 5%;"></div>
-        <div class="firefly" style="top: 30%; left: 85%; animation-delay: 1.5s;"></div>
-        <div class="firefly" style="top: 60%; left: 15%; animation-delay: 3s;"></div>
-        <div class="firefly" style="top: 80%; left: 75%; animation-delay: 4.5s;"></div>
-        <div class="firefly" style="top: 45%; left: 45%; animation-delay: 2s;"></div>
+        <div class="particle" style="top: 12%; left: 8%; animation-delay: 0s;"></div>
+        <div class="particle" style="top: 22%; left: 82%; animation-delay: 2s;"></div>
+        <div class="particle" style="top: 48%; left: 18%; animation-delay: 4s;"></div>
+        <div class="particle" style="top: 68%; left: 72%; animation-delay: 6s;"></div>
+        <div class="particle" style="top: 38%; left: 45%; animation-delay: 3s;"></div>
+        <div class="particle" style="top: 8%; left: 55%; animation-delay: 8s;"></div>
+        <div class="particle" style="top: 82%; left: 28%; animation-delay: 5s;"></div>
+        <div class="particle" style="top: 55%; left: 92%; animation-delay: 7s;"></div>
+        <div class="particle" style="top: 30%; left: 62%; animation-delay: 1s;"></div>
+        <div class="particle" style="top: 75%; left: 12%; animation-delay: 9s;"></div>
+        <div class="particle" style="top: 5%; left: 38%; animation-delay: 10s;"></div>
+        <div class="particle" style="top: 92%; left: 65%; animation-delay: 11s;"></div>
     </div>
 
     <nav class="nav-bar">
         <div class="nav-content">
-            <a href="#home" class="logo">
-                <span class="logo-icon">🐉</span>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🌿</span>
                 <span class="logo-text">HaShelves</span>
             </a>
             <button class="nav-toggle" aria-label="Toggle menu">☰</button>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">rations</a></li>
-                <li><a href="#vault">Vault</a></li>
-                <li><a href="#patio">The Courtyard</a></li>
-                <li><a href="#story">Our Grimoire</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/menu.html">Menu</a></li>
+                <li><a href="pages/menu.html#books">Books</a></li>
+                <li><a href="pages/order.html">Order</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <section id="home" class="hero">
         <svg class="hero-vine left-vine" viewBox="0 0 200 800" preserveAspectRatio="xMidYMid slice">
-            <path d="M40 800 Q60 700 30 600 Q10 500 40 400 Q70 300 30 200 Q10 100 40 0"
-                  stroke="var(--vine)" stroke-width="3" fill="none" opacity="0.6"/>
-            <ellipse cx="30" cy="650" rx="15" ry="25" fill="var(--traitor-green)" opacity="0.4" transform="rotate(30 30 650)"/>
-            <ellipse cx="45" cy="450" rx="14" ry="22" fill="var(--traitor-green)" opacity="0.35" transform="rotate(-20 45 450)"/>
-            <ellipse cx="20" cy="250" rx="14" ry="22" fill="var(--traitor-green)" opacity="0.35" transform="rotate(25 20 250)"/>
-            <ellipse cx="50" cy="100" rx="14" ry="22" fill="var(--traitor-green)" opacity="0.3" transform="rotate(-15 50 100)"/>
-            <path d="M40 800 Q60 700 30 600 Q10 500 40 400 Q70 300 30 200 Q10 100 40 0"
-                  stroke="var(--vine)" stroke-width="1.5" fill="none" opacity="0.3" transform="translate(15, -10)"/>
+            <path d="M50 850 Q80 700 40 550 Q15 400 55 250 Q80 150 40 50 Q35 20 45 -20"
+                  stroke="var(--vine)" stroke-width="2.5" fill="none" opacity="0.5"/>
+            <path d="M50 850 Q80 700 40 550 Q15 400 55 250 Q80 150 40 50 Q35 20 45 -20"
+                  stroke="var(--moss)" stroke-width="1" fill="none" opacity="0.3" transform="translate(12, 5)"/>
+            <ellipse cx="55" cy="650" rx="11" ry="20" fill="var(--leaf)" opacity="0.25" transform="rotate(35 55 650)"/>
+            <ellipse cx="30" cy="480" rx="12" ry="18" fill="var(--moss)" opacity="0.3" transform="rotate(-25 30 480)"/>
+            <ellipse cx="60" cy="320" rx="11" ry="19" fill="var(--leaf)" opacity="0.25" transform="rotate(20 60 320)"/>
+            <ellipse cx="38" cy="180" rx="10" ry="16" fill="var(--moss)" opacity="0.25" transform="rotate(-18 38 180)"/>
+            <ellipse cx="48" cy="80" rx="9" ry="14" fill="var(--leaf)" opacity="0.2" transform="rotate(30 48 80)"/>
+            <ellipse cx="30" cy="700" rx="8" ry="12" fill="var(--sage-muted)" opacity="0.15" transform="rotate(-15 30 700)"/>
+            <ellipse cx="62" cy="420" rx="9" ry="14" fill="var(--sage-muted)" opacity="0.15" transform="rotate(40 62 420)"/>
         </svg>
         <svg class="hero-vine right-vine" viewBox="0 0 200 800" preserveAspectRatio="xMidYMid slice">
-            <path d="M160 800 Q140 700 170 600 Q190 500 160 400 Q130 300 170 200 Q190 100 160 0"
-                  stroke="var(--vine)" stroke-width="3" fill="none" opacity="0.6"/>
-            <ellipse cx="170" cy="700" rx="15" ry="25" fill="var(--traitor-green)" opacity="0.4" transform="rotate(-30 170 700)"/>
-            <ellipse cx="155" cy="500" rx="14" ry="22" fill="var(--traitor-green)" opacity="0.35" transform="rotate(20 155 500)"/>
-            <ellipse cx="175" cy="300" rx="14" ry="22" fill="var(--traitor-green)" opacity="0.35" transform="rotate(-25 175 300)"/>
-            <ellipse cx="150" cy="100" rx="14" ry="22" fill="var(--traitor-green)" opacity="0.3" transform="rotate(15 150 100)"/>
-            <path d="M160 800 Q140 700 170 600 Q190 500 160 400 Q130 300 170 200 Q190 100 160 0"
-                  stroke="var(--vine)" stroke-width="1.5" fill="none" opacity="0.3" transform="translate(-15, -10)"/>
+            <path d="M150 850 Q120 700 160 550 Q185 400 145 250 Q120 150 160 50 Q165 20 155 -20"
+                  stroke="var(--vine)" stroke-width="2.5" fill="none" opacity="0.5"/>
+            <path d="M150 850 Q120 700 160 550 Q185 400 145 250 Q120 150 160 50 Q165 20 155 -20"
+                  stroke="var(--moss)" stroke-width="1" fill="none" opacity="0.3" transform="translate(-12, 5)"/>
+            <ellipse cx="145" cy="700" rx="11" ry="20" fill="var(--leaf)" opacity="0.25" transform="rotate(-35 145 700)"/>
+            <ellipse cx="170" cy="520" rx="12" ry="18" fill="var(--moss)" opacity="0.3" transform="rotate(25 170 520)"/>
+            <ellipse cx="140" cy="360" rx="11" ry="19" fill="var(--leaf)" opacity="0.25" transform="rotate(-20 140 360)"/>
+            <ellipse cx="162" cy="200" rx="10" ry="16" fill="var(--moss)" opacity="0.25" transform="rotate(18 162 200)"/>
+            <ellipse cx="152" cy="90" rx="9" ry="14" fill="var(--leaf)" opacity="0.2" transform="rotate(-30 152 90)"/>
+            <ellipse cx="170" cy="680" rx="8" ry="12" fill="var(--sage-muted)" opacity="0.15" transform="rotate(15 170 680)"/>
+            <ellipse cx="138" cy="400" rx="9" ry="14" fill="var(--sage-muted)" opacity="0.15" transform="rotate(-40 138 400)"/>
         </svg>
+
         <div class="hero-content">
             <h1 class="title">
-                <span class="logo-ear">🧝‍♂️</span><span class="title-line">HaShelves</span>
+                <span class="title-main">H<span class="title-ears">🧝‍♂️</span>Shelves</span>
             </h1>
             <p class="subtitle">Whispered Pages & Savory Feasts</p>
-            <p class="tagline">Where ancient tomes meet modern flavors</p>
-            <a href="#menu" class="cta-button">Enter the Cellar</a>
+            <p class="tagline">Where ancient tomes meet the morning light</p>
+            <a href="pages/menu.html" class="cta-button">View the Rations</a>
         </div>
         <div class="scroll-indicator">↧</div>
     </section>
 
-    <section id="menu" class="menu-section">
-        <div class="container">
-            <h2 class="section-title">rations</h2>
-            <p class="section-subtitle">Simple sustenance for weary travellers</p>
-
-            <div class="menu-grid">
-                <div class="menu-card">
-                    <div class="menu-card-icon">🥖</div>
-                    <h3>Baguettes</h3>
-                    <p class="menu-desc">Warm, crusty loaves with salted butter</p>
-                    <span class="menu-price">3</span>
-                </div>
-
-                <div class="menu-card">
-                    <div class="menu-card-icon">🥚</div>
-                    <h3>Eggs</h3>
-                    <p class="menu-desc">Fried, scrambled, or herbs & spices</p>
-                    <span class="menu-price">4</span>
-                </div>
-
-                <div class="menu-card">
-                    <div class="menu-card-icon">🧀</div>
-                    <h3>Toast</h3>
-                    <p class="menu-desc">Sourdough, artisan cheese spread</p>
-                    <span class="menu-price">5</span>
-                </div>
-
-                <div class="menu-card">
-                    <div class="menu-card-icon">🥐</div>
-                    <h3>Croissants</h3>
-                    <p class="menu-desc">Buttery, flaky, made fresh daily</p>
-                    <span class="menu-price">4</span>
-                </div>
-
-                <div class="menu-card">
-                    <div class="menu-card-icon">☕</div>
-                    <h3>Hot Brews</h3>
-                    <p class="menu-desc">Coffee, tea, and herbal infusions</p>
-                    <span class="menu-price">3</span>
-                </div>
-
-                <div class="menu-card">
-                    <div class="menu-card-icon">🧃</div>
-                    <h3>Cold Quenchers</h3>
-                    <p class="menu-desc">Fresh juice, iced drinks</p>
-                    <span class="menu-price">4</span>
-                </div>
-            </div>
+    <!-- HOME QUICK LINKS -->
+    <section class="container" style="padding-top: 4rem; padding-bottom: 2rem;">
+        <div class="home-grid">
+            <a href="pages/menu.html" class="home-card">
+                <span class="home-card-icon">🥖</span>
+                <h3>Rations</h3>
+                <p>Simple breads, eggs, toasts, and pastries — baked fresh each morning</p>
+                <span class="card-link">View Menu →</span>
+            </a>
+            <a href="pages/menu.html#books" class="home-card">
+                <span class="home-card-icon">📚</span>
+                <h3>The Vault</h3>
+                <p>A library of old &mdash; browse shelves, find quiet corners, stay as long as you like</p>
+                <span class="card-link">Browse Books →</span>
+            </a>
+            <a href="pages/order.html" class="home-card">
+                <span class="home-card-icon">📜</span>
+                <h3>Place an Order</h3>
+                <p>Pre-order for pickup, courtyard delivery, or a reserved seat in the Reading Hall</p>
+                <span class="card-link">Order Now →</span>
+            </a>
+            <a href="pages/contact.html" class="home-card">
+                <span class="home-card-icon">✉️</span>
+                <h3>Send a Raven</h3>
+                <p>Questions, reservations, book donations, or just a word to the elves</p>
+                <span class="card-link">Get in Touch →</span>
+            </a>
         </div>
     </section>
 
-    <section id="vault" class="vault-section">
-        <div class="container">
-            <h2 class="section-title">The Vault</h2>
-            <p class="section-subtitle">A sanctuary of stories & silenced whispers</p>
-
-            <div class="vault-grid">
-                <div class="vault-item">
-                    <h3>📚 The Reading Hall</h3>
-                    <p>Floor-to-ceiling shelves of ancient tales and modern adventures. Find your next quest between these covers.</p>
-                </div>
-                <div class="vault-item">
-                    <h3>🔥 The Hearth</h3>
-                    <p>A cozy corner by warm flames. Perfect for those who prefer their stories toasted.</p>
-                </div>
-                <div class="vault-item">
-                    <h3>🌿 The Green Room</h3>
-                    <p>Plants cluster in nooks and crannies. Elves dwell here. They keep the candles lit.</p>
-                </div>
-                <div class="vault-item">
-                    <h3>🎵 The Ballad Room</h3>
-                    <p>Soft lute melodies drift between the shelves. Tipping the bards is encouraged but never required.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="patio" class="patio-section">
+    <section class="courtyard-section" style="border-top: 1px solid var(--border-color);">
         <div class="container">
             <h2 class="section-title">The Courtyard</h2>
             <p class="section-subtitle">Fresh air, fresh pens, fresh leaves</p>
-
-            <div class="patio-features">
-                <div class="patio-card">
-                    <span class="patio-icon">🌤</span>
+            <div class="courtyard-grid">
+                <div class="courtyard-item">
+                    <span class="courtyard-icon">🌿</span>
                     <h3>Open Air</h3>
-                    <p>Seasonal seating under vine-covered trellises</p>
+                    <p>Seasonal seating under vine-covered trellises and ancient oaks</p>
                 </div>
-                <div class="patio-card">
-                    <span class="patio-icon">💨</span>
+                <div class="courtyard-item">
+                    <span class="courtyard-icon">💨</span>
                     <h3>Vapor-Friendly</h3>
-                    <p>Designated zones with tidy disposal</p>
+                    <p>Designated zones with tidy disposal — moss stone markers</p>
                 </div>
-                <div class="patio-card">
-                    <span class="patio-icon">🪑</span>
-                    <h3>Comfort</h3>
-                    <p>Cushioned long-chairs and tree-stump tables</p>
-                </div>
-                <div class="patio-card">
-                    <span class="patio-icon">🌙</span>
+                <div class="courtyard-item">
+                    <span class="courtyard-icon">🕯️</span>
                     <h3>Evening Glow</h3>
-                    <p>String lights and paper lanterns after dusk</p>
+                    <p>Paper lanterns and candlelight after dusk</p>
+                </div>
+                <div class="courtyard-item">
+                    <span class="courtyard-icon">🐉</span>
+                    <h3>Elven Service</h3>
+                    <p>Staffed by the clan — centuries of hospitality in every pour</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="story" class="story-section">
-        <div class="container">
-            <h2 class="section-title">Our Grimoire</h2>
-            <div class="story-content">
-                <p>HaShelves was born from a dream—a breakfast tavern where the scent of bread mingles with the dust of old books, where elves brush elbows with scholars, and every corner feels like a hidden chamber in an ancient dungeon.</p>
-                <p>Found by three wayward adventurers who'd grown tired of taverns that lacked both good books and good breakfasts, HaShelves now serves as a refuge for the curious, the hungry, and those seeking a quiet mind—or a loud one, come evening.</p>
-                <p>Come for the sourdough. Stay for the stories. Leave with both.</p>
-            </div>
-            <div class="story-meta">
-                <span class="sigil">🐉 ✦ 🧙</span>
-            </div>
-        </div>
-    </section>
-
-    <section class="visit-section">
+    <section class="visit-section" style="background: var(--bg-deep); border-top: 1px solid var(--border-color);">
         <div class="container">
             <h2 class="section-title">Find the Portal</h2>
             <div class="visit-grid">
                 <div class="visit-item">
                     <h3>Hours</h3>
-                    <p>Mon - Fri: 7am - 4pm</p>
-                    <p>Sat - Sun: 8am - 6pm</p>
+                    <p>Mon – Fri: 7am – 4pm</p>
+                    <p>Sat – Sun: 8am – 6pm</p>
                 </div>
                 <div class="visit-item">
                     <h3>Location</h3>
-                    <p>[Your Address Here]</p>
-                    <p>Corner of Ink & Crumb</p>
+                    <p>123 Cobblestone Lane</p>
+                    <p>Portland, OR</p>
                 </div>
                 <div class="visit-item">
                     <h3>Connect</h3>
-                    <p>@HaShelves</p>
                     <p>hello@hashelves.com</p>
+                    <p>@hashelves</p>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="footer">
+        <span class="sigil">🌿 🐉 📖</span>
         <p>© 2026 HaShelves. Brewed with starlight and sourdough.</p>
     </footer>
 
